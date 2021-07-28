@@ -55,13 +55,13 @@ body {
 /* @media (prefers-color-scheme: light) {
   body {
     background: #c4c4c4;
-    color: #1a1a1a;
+    color: antiquewhite;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #1a1a1a;
+    background-color: #1a1a1a;
     color: #c4c4c4;
   }
 } */
@@ -93,6 +93,12 @@ body {
   }
   .abbr {
     font-size: 5vh;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
   }
 }
 
