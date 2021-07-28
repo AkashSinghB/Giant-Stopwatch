@@ -1,0 +1,104 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #202124;
+}
+.cont {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.clock {
+  margin: 0;
+  font-size: 20vw;
+  color: aliceblue;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.hr {
+  text-align: center;
+  width: 26vw;
+  /* background-color: gray; */
+}
+.min {
+  text-align: center;
+  width: 26vw;
+  /* background-color: lightblue; */
+}
+.sec {
+  width: 26vw;
+  text-align: center;
+  /* background-color: lightgreen; */
+}
+
+.abbr {
+  font-size: 3vw;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-end;
+  height: 16vw;
+  /* background-color: blueviolet; */
+}
+
+/* @media (prefers-color-scheme: light) {
+  body {
+    background: #c4c4c4;
+    color: #1a1a1a;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #c4c4c4;
+  }
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  span {
+    display: none;
+    width: 0;
+  }
+  .clock {
+    padding: 0;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-size: 32vh;
+  }
+  .hr {
+    width: 100%;
+    line-height: 30vh;
+  }
+
+  .min {
+    width: 100%;
+    line-height: 30vh;
+  }
+  .sec {
+    width: 100%;
+    line-height: 30vh;
+  }
+  .abbr {
+    font-size: 5vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  span {
+    display: none;
+  }
+}

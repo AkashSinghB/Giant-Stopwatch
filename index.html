@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+  </style>
+
+  
+  
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Giant Clock</title>
+  </head>
+  <body onload="startTime()">
+    <div class="cont">
+      <div class="clock row col-lg-4">
+        <div id="responsive_headline" class="hr">00</div>
+        <span>:</span>
+        <div class="min">00</div>
+        <span>:</span>
+        <div class="sec">00</div>
+        <div class="abbr"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const startTime = () => {
+      const abbr = document.querySelector(".abbr");
+      const hr = document.querySelector(".hr");
+      const min = document.querySelector(".min");
+      const sec = document.querySelector(".sec");
+
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+
+      let am_pm = "PM";
+      if (h > 12) {
+        h -= 12;
+        am_pm = "PM";
+      }
+      if (h == 0) {
+        h = 12;
+        am_pm = "AM";
+      }
+
+      h = h < 10 ? "0" + h : h;
+      m = m < 10 ? "0" + m : m;
+      s = s < 10 ? "0" + s : s;
+
+      hr.innerHTML = h;
+      min.innerHTML = m;
+      sec.innerHTML = s;
+
+      abbr.innerHTML = am_pm;
+    };
+    
+    setInterval(startTime, 1000);
+
+  </script>
+</html>
