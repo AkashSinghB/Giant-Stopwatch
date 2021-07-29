@@ -100,9 +100,8 @@ body {
 @media only screen and (max-width: 900px) and (orientation: landscape) {
   .clock {
     font-size: 24vw;
-    margin-left: -25px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     text-align: center;
   }
   .abbr {
