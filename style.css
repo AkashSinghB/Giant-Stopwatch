@@ -30,17 +30,17 @@ body {
 .hr {
   text-align: center;
   width: 26vw;
-  background-color: gray;
+  /* background-color: gray; */
 }
 .min {
   text-align: center;
   width: 26vw;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 .sec {
   width: 26vw;
   text-align: center;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
 }
 
 .abbr {
@@ -49,7 +49,7 @@ body {
   display: flex;
   align-items: flex-end;
   height: 16vw;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 /* @media (prefers-color-scheme: light) {
