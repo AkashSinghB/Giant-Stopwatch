@@ -49,22 +49,8 @@ body {
   display: flex;
   align-items: flex-end;
   height: 16vw;
-  /* background-color: blueviolet; */
+  background-color: blueviolet;
 }
-
-/* @media (prefers-color-scheme: light) {
-  body {
-    background: #c4c4c4;
-    color: antiquewhite;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1a1a1a;
-    color: #c4c4c4;
-  }
-} */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
@@ -98,6 +84,9 @@ body {
 }
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
+  .body {
+    height: 100vh;
+  }
   .clock {
     font-size: 24vw;
     display: flex;
@@ -107,8 +96,10 @@ body {
     font-weight: 600;
   }
   .abbr {
-    width: 0;
-    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    right: 0;
   }
 }
 
@@ -118,3 +109,17 @@ body {
     display: none;
   }
 }
+
+/* @media (prefers-color-scheme: light) {
+  body {
+    background: #c4c4c4;
+    color: antiquewhite;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #c4c4c4;
+  }
+} */
