@@ -103,7 +103,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    transform: scale(1.2, 1.5);
+    transform: scale(1, 1.5);
     font-weight: 600;
   }
   .abbr {
