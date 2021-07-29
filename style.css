@@ -49,7 +49,7 @@ body {
   display: flex;
   align-items: flex-end;
   height: 16vw;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -94,14 +94,20 @@ body {
     text-align: center;
     transform: scale(1, 1.2);
     font-weight: 600;
+    position: initial;
+    z-index: 1;
+
   }
   .abbr {
-    position: absolute;
-    bottom: 0;
     height: 5vh;
-    right: 0;
+    width: 100%;
+    display: block;
+    text-align: right;
+    position: absolute;
+    top:65vh;
+    z-index: 2;
+
   }
-}
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
