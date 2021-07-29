@@ -96,7 +96,8 @@ body {
     font-weight: 600;
     position: initial;
     z-index: 1;
-
+    margin-left: auto;
+    margin-right: auto;
   }
   .abbr {
     height: 5vh;
