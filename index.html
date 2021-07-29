@@ -43,14 +43,15 @@
       let m = today.getMinutes();
       let s = today.getSeconds();
 
-      let am_pm = "";
+      let am_pm = "PM";
       if (h > 12) {
         h -= 12;
         am_pm = "PM";
       }
-      else{
+      if(h < 12) {
         am_pm = "AM";
       }
+      
       if (h == 0) {
         h = 12;
         am_pm = "AM";
