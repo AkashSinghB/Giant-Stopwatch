@@ -24,7 +24,7 @@ body {
   align-items: center;
   min-height: 100vh;
   min-width: 100%;
-  overflow-wrap: break-word;
+  overflow: hidden;
 }
 
 .hr {
@@ -75,8 +75,9 @@ body {
   .clock {
     padding: 0;
     flex-direction: column;
-    letter-spacing: 2px;
-    font-size: 32vh;
+    letter-spacing: 1px;
+    font-size: 35vh;
+    text-align: left;
   }
   .hr {
     width: 100%;
@@ -96,9 +97,9 @@ body {
   }
 }
 
-@media only screen and (orientation: landscape) {
-  body {
-    font-size: 30vh;
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .clock {
+    font-size: 20vw;
   }
 }
 
