@@ -51,7 +51,10 @@ body {
   height: 16vw;
   /* background-color: blueviolet; */
 }
-
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
   span {

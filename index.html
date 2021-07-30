@@ -12,10 +12,6 @@
     />
 
   </style>
-
-  
-  
-
     <link rel="stylesheet" href="style.css" />
     <title>Giant Clock</title>
   </head>
@@ -28,6 +24,17 @@
         <span>:</span>
         <div class="sec">00</div>
         <div class="abbr"></div>
+      </div>
+      <div class="buttons">
+        <div class="stopwatch">
+          <button class="btn btn-outline-secondary">Stopwatch</button>
+        </div>
+        <div class="btnclock">
+          <button class="btn btn-outline-light">Clock with sec</button>
+        </div>
+      </div>
+      <div>
+        <br>
       </div>
     </div>
   </body>
@@ -44,7 +51,7 @@
       let s = today.getSeconds();
 
       let am_pm = "PM";
-      
+
       if(h < 12) {
         am_pm = "AM";
       }
@@ -70,7 +77,6 @@
 
       abbr.innerHTML = am_pm;
     };
-    
     setInterval(startTime, 1000);
 
   </script>
