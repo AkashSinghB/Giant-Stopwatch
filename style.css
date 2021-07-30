@@ -53,7 +53,7 @@ body {
 }
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
@@ -67,6 +67,7 @@ body {
     letter-spacing: 1px;
     font-size: 37vh;
     text-align: left;
+    min-height: 0;
   }
   .hr {
     width: 100%;
@@ -81,8 +82,14 @@ body {
     width: 100%;
     line-height: 30vh;
   }
+  .buttons {
+    margin-top: 10px;
+  }
   .abbr {
-    font-size: 5vh;
+    font-size: 3vh;
+    color: aliceblue;
+    height: 5vh;
+    margin: 0;
   }
 }
 
