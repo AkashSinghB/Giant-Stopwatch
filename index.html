@@ -41,13 +41,13 @@
 
       <div class="buttonsforStpW">
         <div class="start">
-          <button class="btn btn-outline-secondary">Start</button>
+          <button class="btn btn-outline-success">Start</button>
         </div>
         <div class="stop">
-          <button class="btn btn-outline-secondary">Stop</button>
+          <button class="btn btn-outline-danger">Stop</button>
         </div>
         <div class="reset">
-          <button class="btn btn-outline-secondary">Reset</button>
+          <button class="btn btn-outline-primary">Reset</button>
         </div>
       </div>
 
@@ -78,6 +78,7 @@
     let Interval;
     let milsec = 00
     let seconds = 00
+    let minuntes = 00
 
     buttonStopwatch.onclick = () => {
       buttons.style.display = "none"
@@ -130,6 +131,7 @@
 
       milsec = 00
       seconds = 00
+      minuntes = 00
       hr.innerHTML = "00";
       min.innerHTML = "00";
       sec.innerHTML = "00";
@@ -143,11 +145,19 @@
       if(milsec > 9) sec.innerHTML = milsec
       if(milsec > 99) {
         seconds++;
-        min.innerHTML = "0" + seconds;
         milsec = 0;
         sec.innerHTML = "0" + 0
+        min.innerHTML = "0" + seconds;
+        
       }
       if(seconds > 9) min.innerHTML = seconds
+      if(seconds > 59) {
+        minuntes++
+        seconds =0
+        hr.innerHTML = "0" + minuntes
+        min.innerHTML = "0" + seconds;
+      }
+      if(minutes > 9) hr.innerHTML = seconds
     }
 
     const startTime = () => {
