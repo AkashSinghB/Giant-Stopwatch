@@ -55,11 +55,15 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices ( 576px and up) */
 @media (max-width: 575.98px) {
-  span {
+  #span1 {
+    display: block;
+    font-size: 20vh;
+    /* width: 100%; */
+  }
+  #span2 {
     display: none;
-    width: 0;
   }
   .clock {
     padding: 0;
@@ -79,6 +83,7 @@ body {
     line-height: 30vh;
   }
   .sec {
+    display: none;
     width: 100%;
     line-height: 30vh;
   }
@@ -90,6 +95,23 @@ body {
     color: aliceblue;
     height: 5vh;
     margin: 0;
+  }
+  .buttonsforStpW {
+    display: none;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+  .btnclock {
+    display: none;
+  }
+  .clockbutton {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    justify-content: space-around;
+  }
+  #btnClock {
+    width: 76%;
   }
 }
 
@@ -121,8 +143,8 @@ body {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   span {
     display: none;
   }
-}
+} */
