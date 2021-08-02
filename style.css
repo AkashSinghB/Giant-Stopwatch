@@ -22,7 +22,8 @@ body {
   font-weight: 500;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  justify-content: space-evenly;
+  min-height: 80vh;
   min-width: 100%;
   overflow: hidden;
 }
@@ -47,24 +48,75 @@ body {
   font-size: 3vw;
   font-weight: 400;
   display: flex;
-  align-items: flex-end;
-  height: 16vw;
+  justify-content: center;
+  color: aliceblue;
+  width: 100%;
   /* background-color: blueviolet; */
 }
 .buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0;
 }
+.btnclockWS {
+  width: 100%;
+  display: none;
+}
+.btnclock {
+  width: 100%;
+}
+
+.stopwatch {
+  width: 100%;
+}
+.buttonsforStpW {
+  display: none;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.start {
+  width: 30%;
+}
+.stop {
+  width: 30%;
+}
+.reset {
+  width: 30%;
+}
+.clockbutton {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+/* #span1 {
+  display: block;
+  font-size: 20vh;
+  width: 100%;
+} */
+
 /* Small devices ( 576px and up) */
 @media (max-width: 575.98px) {
   #span1 {
-    display: block;
+    display: none;
     font-size: 20vh;
     /* width: 100%; */
   }
   #span2 {
     display: none;
+    font-size: 20vh;
+    /* width: 100%; */
   }
+
   .clock {
     padding: 0;
     flex-direction: column;
@@ -83,18 +135,23 @@ body {
     line-height: 30vh;
   }
   .sec {
-    display: none;
     width: 100%;
     line-height: 30vh;
   }
   .buttons {
     margin-top: 10px;
+    justify-content: space-between;
+    padding: 0;
   }
   .abbr {
-    font-size: 3vh;
+    font-size: 4vh;
     color: aliceblue;
-    height: 5vh;
-    margin: 0;
+    height: 4vh;
+    padding: 0;
+    width: unset;
+  }
+  .stopwatch {
+    width: unset;
   }
   .buttonsforStpW {
     display: none;
@@ -102,16 +159,18 @@ body {
     margin-top: 10px;
   }
   .btnclock {
+    display: flex;
+    width: unset;
+  }
+  .btnclockWS {
     display: none;
+    width: unset;
   }
   .clockbutton {
     display: none;
     margin-top: 10px;
     margin-bottom: 5px;
     justify-content: space-around;
-  }
-  #btnClock {
-    width: 76%;
   }
 }
 
