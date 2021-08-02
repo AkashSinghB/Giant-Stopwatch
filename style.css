@@ -67,6 +67,7 @@ body {
 }
 .btnclock {
   width: 100%;
+  display: block;
 }
 
 .stopwatch {

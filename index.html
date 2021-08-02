@@ -121,11 +121,14 @@
     }
 
     clockbutton.onclick = () => {
+      reset.click()
+
       clockbutton.style.display = "none"
       buttons.style.display = "flex"
       buttonsforStpW.style.display = "none"
       buttonClockWS.style.display = "none"
-      btnClock.style.display = "flex"
+      btnClock.style.display = "block"
+
       if (window.innerWidth > 600) {
         document.querySelector("#span1").style.display = 'block'
       document.querySelector("#span2").style.display = 'block'
